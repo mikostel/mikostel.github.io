@@ -10,6 +10,12 @@ import ArrowUpRight from '$lib/icons/arrow-up-right.svg?raw';
 import LinkedIn from '$lib/icons/linkedin.svg?raw';
 import GitHub from '$lib/icons/github.svg?raw';
 import Photo from '$lib/photo.jpg';
+import ParsleyCaseStudy from '$lib/studies/parsley.pdf';
+import OfwCaseStudy from '$lib/studies/ofw.pdf';
+import FlipgridCaseStudy from '$lib/studies/flipgrid.pdf';
+import DuffyCaseStudy from '$lib/studies/duffy.pdf';
+import PlauditCaseStudy from '$lib/studies/plaudit.pdf';
+import ThemeBoutiqueCaseStudy from '$lib/studies/themeboutique.pdf';
 
 let Test = FlipgridLogoLight;
 import "../app.css";
@@ -28,32 +34,32 @@ import "../app.css";
 
 	<p class="text-xl font-medium pb-4">My Work</p>
 		<div class="grid grid-cols-2 md:grid-cols-3 gap-4">
-			<div class="logo rounded-lg group fill-[#284849]">
+			<a class="logo rounded-lg group" href={ParsleyCaseStudy}>
 				{@html ParsleyLogoDark}
 				{@html ArrowUpRight}
-			</div>
+			</a>
 
-			<div class="logo group rounded-lg">
+			<div class="logo group rounded-lg" href={OfwCaseStudy}>
 				{@html OfwLogoDark}
 				{@html ArrowUpRight}
 			</div>
 
-			<div class="logo group rounded-lg">
+			<div class="logo group rounded-lg" href={ThemeBoutiqueCaseStudy}>
 				{@html ThemeBoutiqueLogoDark}
 				{@html ArrowUpRight}
 			</div>
 
-			<div class="logo group rounded-lg">
+			<div class="logo group rounded-lg" href={FlipgridCaseStudy}>
 				{@html FlipgridLogoDark}
 				{@html ArrowUpRight}
 			</div>
 
-			<div class="logo group rounded-lg">
+			<div class="logo group rounded-lg" href={DuffyCaseStudy}>
 				{@html DuffyLogoDark}
 				{@html ArrowUpRight}
 			</div>
 
-			<div class="logo group rounded-lg">
+			<div class="logo group rounded-lg" href={PlauditCaseStudy}>
 				{@html PlauditLogoDark}
 				{@html ArrowUpRight}
 			</div>
