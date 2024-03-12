@@ -13,7 +13,7 @@ const config = {
 		// See https://kit.svelte.dev/docs/adapters for more information about adapters.
 		adapter: adapter({ pages: "docs" }),
 		paths: {
-			base: process.env.NODE_ENV === 'production' ? '/mikostel.github.io' : '',
+			relative: false
 		}
 	}
 };
