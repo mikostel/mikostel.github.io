@@ -25,7 +25,7 @@ let Test = FlipgridLogoLight;
 import "../app.css";
 </script>
 
-<section class="mx-auto max-w-screen-md p-8 min-h-screen">
+<section class="mx-auto max-w-screen-sm md:max-w-screen-md p-8 min-h-screen">
 	<img alt="Photo" src={base + Photo} class="w-32 h-32 mx-auto mb-4 rounded-full ring ring-4 ring-slate-100" />
 	<h1 class="text-4xl font-medium tracking-tight text-center">Mitchell Kostelecký</h1>
 	<h1 class="pb-8 text-2xl font-medium tracking-tight text-neutral-500 text-center">Frontend Software Engineer</h1>
@@ -43,38 +43,42 @@ import "../app.css";
 				{@html ArrowUpRight}
 			</a>
 
-			<div class="logo group rounded-lg" href={OfwCaseStudy}>
+			<a class="logo group rounded-lg" href={OfwCaseStudy}>
 				{@html OfwLogoDark}
 				{@html ArrowUpRight}
-			</div>
+			</a>
 
-			<div class="logo group rounded-lg" href={ThemeBoutiqueCaseStudy}>
+			<a class="logo group rounded-lg" href={ThemeBoutiqueCaseStudy}>
 				{@html ThemeBoutiqueLogoDark}
 				{@html ArrowUpRight}
-			</div>
+			</a>
 
-			<div class="logo group rounded-lg" href={FlipgridCaseStudy}>
+			<a class="logo group rounded-lg" href={FlipgridCaseStudy}>
 				{@html FlipgridLogoDark}
 				{@html ArrowUpRight}
-			</div>
+			</a>
 
-			<div class="logo group rounded-lg" href={DuffyCaseStudy}>
+			<a class="logo group rounded-lg" href={DuffyCaseStudy}>
 				{@html DuffyLogoDark}
 				{@html ArrowUpRight}
-			</div>
+			</a>
 
-			<div class="logo group rounded-lg" href={PlauditCaseStudy}>
+			<a class="logo group rounded-lg" href={PlauditCaseStudy}>
 				{@html PlauditLogoDark}
 				{@html ArrowUpRight}
-			</div>
+			</a>
 		</div>
 
 		<p class="text-xl font-medium pt-8 pb-4">Get in touch</p>
 		<p class="text-xl text-neutral-500 pb-8">I'm always open to meeting new people and hearing about interesting projects. Connect with me on LinkedIn to start a conversation.</p>
 		
 		<div class="flex gap-4 justify-center transition text-neutral-500 group">
-			{@html LinkedIn}
-			{@html GitHub}
+			<a href="https://www.linkedin.com/in/mitchkostelecky" target="_blank" rel="noopener">
+				{@html LinkedIn}
+			</a>
+			<a href="https://github.com/mikostel" target="_blank" rel="noopener">
+				{@html GitHub}
+			</a>
 		</div>
 </section>
 
