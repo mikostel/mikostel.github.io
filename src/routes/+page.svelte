@@ -17,9 +17,7 @@ import DuffyCaseStudy from '$lib/studies/duffy.pdf';
 import PlauditCaseStudy from '$lib/studies/plaudit.pdf';
 import ThemeBoutiqueCaseStudy from '$lib/studies/themeboutique.pdf';
 
- import { base } from "$app/paths";
-
-console.log(base);
+import { base } from "$app/paths";
 
 let Test = FlipgridLogoLight;
 import "../app.css";
