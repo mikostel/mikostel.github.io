@@ -38,32 +38,32 @@ import "../app.css";
 
 	<p class="text-xl font-medium pb-4">My Work</p>
 		<div class="grid grid-cols-2 md:grid-cols-3 gap-4">
-			<a class="logo rounded-lg group" href={ParsleyCaseStudy}>
+			<a class="logo rounded-lg group" href={ParsleyCaseStudy} target="_blank" rel="noopener">
 				{@html ParsleyLogoDark}
 				{@html ArrowUpRight}
 			</a>
 
-			<a class="logo group rounded-lg" href={OfwCaseStudy}>
+			<a class="logo group rounded-lg" href={OfwCaseStudy} target="_blank" rel="noopener">
 				{@html OfwLogoDark}
 				{@html ArrowUpRight}
 			</a>
 
-			<a class="logo group rounded-lg" href={ThemeBoutiqueCaseStudy}>
+			<a class="logo group rounded-lg" href={ThemeBoutiqueCaseStudy} target="_blank" rel="noopener">
 				{@html ThemeBoutiqueLogoDark}
 				{@html ArrowUpRight}
 			</a>
 
-			<a class="logo group rounded-lg" href={FlipgridCaseStudy}>
+			<a class="logo group rounded-lg" href={FlipgridCaseStudy} target="_blank" rel="noopener">
 				{@html FlipgridLogoDark}
 				{@html ArrowUpRight}
 			</a>
 
-			<a class="logo group rounded-lg" href={DuffyCaseStudy}>
+			<a class="logo group rounded-lg" href={DuffyCaseStudy} target="_blank" rel="noopener">
 				{@html DuffyLogoDark}
 				{@html ArrowUpRight}
 			</a>
 
-			<a class="logo group rounded-lg" href={PlauditCaseStudy}>
+			<a class="logo group rounded-lg" href={PlauditCaseStudy} target="_blank" rel="noopener">
 				{@html PlauditLogoDark}
 				{@html ArrowUpRight}
 			</a>
