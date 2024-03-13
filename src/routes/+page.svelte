@@ -39,7 +39,7 @@ import "../app.css";
 	<section>
 	<h3 class="text-xl font-medium pb-4">My Work</h3>
 		<div class="grid grid-cols-2 md:grid-cols-3 gap-4">
-			<a class="logo rounded-lg group" href={ParsleyCaseStudy} target="_blank" rel="noopener">
+			<a class="logo rounded-lg group fill-[#284849]" href={ParsleyCaseStudy} target="_blank" rel="noopener">
 				{@html ParsleyLogoDark}
 				{@html ArrowUpRight}
 			</a>
