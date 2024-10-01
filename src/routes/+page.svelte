@@ -1,45 +1,61 @@
 <script lang="ts">
-import FlipgridLogoLight from '$lib/logos/flipgrid-logo-light.svg?raw';
-import FlipgridLogoDark from '$lib/logos/flipgrid-logo-dark.svg?raw';
-import DuffyLogoDark from '$lib/logos/duffy-logo-dark.svg?raw';
-import PlauditLogoDark from '$lib/logos/plaudit-logo-dark.svg?raw';
-import OfwLogoDark from '$lib/logos/ofw-logo-dark.svg?raw';
-import ParsleyLogoDark from '$lib/logos/ph-logo-dark.svg?raw';
-import ThemeBoutiqueLogoDark from '$lib/logos/tb-logo-dark.svg?raw';
-import ArrowUpRight from '$lib/icons/arrow-up-right.svg?raw';
-import LinkedIn from '$lib/icons/linkedin.svg?raw';
-import GitHub from '$lib/icons/github.svg?raw';
-import Photo from '$lib/photo.jpg';
-import ParsleyCaseStudy from '$lib/studies/parsley.pdf';
-import OfwCaseStudy from '$lib/studies/ofw.pdf';
-import FlipgridCaseStudy from '$lib/studies/flipgrid.pdf';
-import DuffyCaseStudy from '$lib/studies/duffy.pdf';
-import PlauditCaseStudy from '$lib/studies/plaudit.pdf';
-import ThemeBoutiqueCaseStudy from '$lib/studies/themeboutique.pdf';
+	import FlipgridLogoLight from '$lib/logos/flipgrid-logo-light.svg?raw';
+	import FlipgridLogoDark from '$lib/logos/flipgrid-logo-dark.svg?raw';
+	import DuffyLogoDark from '$lib/logos/duffy-logo-dark.svg?raw';
+	import PlauditLogoDark from '$lib/logos/plaudit-logo-dark.svg?raw';
+	import OfwLogoDark from '$lib/logos/ofw-logo-dark.svg?raw';
+	import ParsleyLogoDark from '$lib/logos/ph-logo-dark.svg?raw';
+	import ThemeBoutiqueLogoDark from '$lib/logos/tb-logo-dark.svg?raw';
+	import ArrowUpRight from '$lib/icons/arrow-up-right.svg?raw';
+	import LinkedIn from '$lib/icons/linkedin.svg?raw';
+	import GitHub from '$lib/icons/github.svg?raw';
+	import Photo from '$lib/photo.jpg';
+	import ParsleyCaseStudy from '$lib/studies/parsley.pdf';
+	import OfwCaseStudy from '$lib/studies/ofw.pdf';
+	import FlipgridCaseStudy from '$lib/studies/flipgrid.pdf';
+	import DuffyCaseStudy from '$lib/studies/duffy.pdf';
+	import PlauditCaseStudy from '$lib/studies/plaudit.pdf';
+	import ThemeBoutiqueCaseStudy from '$lib/studies/themeboutique.pdf';
 
-import { base } from "$app/paths";
+	import { base } from '$app/paths';
 
-let Test = FlipgridLogoLight;
-import "../app.css";
+	let Test = FlipgridLogoLight;
+	import '../app.css';
 </script>
 
 <main class="mx-auto max-w-screen-sm md:max-w-screen-md p-8 min-h-screen font-sans antialiased">
-	<img alt="Photo" src={base + Photo} class="w-32 h-32 mx-auto mb-4 rounded-full ring ring-4 ring-slate-100" />
+	<img
+		alt="Photo"
+		src={base + Photo}
+		class="w-32 h-32 mx-auto mb-4 rounded-full ring ring-4 ring-slate-100"
+	/>
 	<h1 class="text-4xl font-medium tracking-tight text-center">Mitchell Kostelecký</h1>
-	<h2 class="pb-8 text-2xl font-medium tracking-tight text-neutral-500 text-center">Frontend Software Engineer</h2>
+	<h2 class="pb-8 text-2xl font-medium tracking-tight text-neutral-500 text-center">
+		Design Engineering Lead
+	</h2>
 
 	<section>
-	<h3 class="text-xl font-medium pb-4">About</h3>
+		<h3 class="text-xl font-medium pb-4">About</h3>
 		<p class="text-xl text-neutral-500 pb-4">
-			I'm a design-focused frontend engineering leader with experience building teams and products that scale efficiently.
+			I'm a design-focused frontend engineering leader with experience building teams and products
+			that scale efficiently.
 		</p>
-		<p class="text-xl text-neutral-500 pb-8">Over the course of my career, I've developed a wide ranging skillset in areas such as system design, software architecture, and web accessibility by building cross-platform, user-centric experiences for education, legal, and healthcare companies.</p>
+		<p class="text-xl text-neutral-500 pb-8">
+			Over the course of my career, I've developed a wide ranging skillset in areas such as system
+			design, software architecture, and web accessibility by building cross-platform, user-centric
+			experiences for education, legal, and healthcare companies.
+		</p>
 	</section>
 
 	<section>
-	<h3 class="text-xl font-medium pb-4">My Work</h3>
+		<h3 class="text-xl font-medium pb-4">My Work</h3>
 		<div class="grid grid-cols-2 md:grid-cols-3 gap-4">
-			<a class="logo rounded-lg group fill-[#284849]" href={ParsleyCaseStudy} target="_blank" rel="noopener">
+			<a
+				class="logo rounded-lg group fill-[#284849]"
+				href={ParsleyCaseStudy}
+				target="_blank"
+				rel="noopener"
+			>
 				{@html ParsleyLogoDark}
 				{@html ArrowUpRight}
 			</a>
@@ -69,21 +85,24 @@ import "../app.css";
 				{@html ArrowUpRight}
 			</a>
 		</div>
-		</section>
+	</section>
 
-		<section>
-			<h3 class="text-xl font-medium pt-8 pb-4">Get in touch</h3>
-			<p class="text-xl text-neutral-500 pb-8">I'm always open to meeting new people and hearing about interesting projects. Connect with me on LinkedIn to start a conversation.</p>
-			
-			<div class="flex gap-4 justify-center transition text-neutral-500 group">
-				<a href="https://www.linkedin.com/in/mitchkostelecky" target="_blank" rel="noopener">
-					{@html LinkedIn}
-				</a>
-				<a href="https://github.com/mikostel" target="_blank" rel="noopener">
-					{@html GitHub}
-				</a>
-			</div>
-		</section>
+	<section>
+		<h3 class="text-xl font-medium pt-8 pb-4">Get in touch</h3>
+		<p class="text-xl text-neutral-500 pb-8">
+			I'm always open to meeting new people and hearing about interesting projects. Connect with me
+			on LinkedIn to start a conversation.
+		</p>
+
+		<div class="flex gap-4 justify-center transition text-neutral-500 group">
+			<a href="https://www.linkedin.com/in/mitchkostelecky" target="_blank" rel="noopener">
+				{@html LinkedIn}
+			</a>
+			<a href="https://github.com/mikostel" target="_blank" rel="noopener">
+				{@html GitHub}
+			</a>
+		</div>
+	</section>
 </main>
 
 <style>
