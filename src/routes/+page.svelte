@@ -29,9 +29,9 @@
 		src={base + Photo}
 		class="w-32 h-32 mx-auto mb-4 rounded-full ring ring-4 ring-slate-100"
 	/>
-	<h1 class="text-4xl font-medium tracking-tight text-center">Mitchell Kostelecký</h1>
+	<h1 class="text-4xl font-medium tracking-tight text-center">Mitch Kostelecky</h1>
 	<h2 class="pb-8 text-2xl font-medium tracking-tight text-neutral-500 text-center">
-		Design Engineering Lead
+		Design Engineer
 	</h2>
 
 	<section>
