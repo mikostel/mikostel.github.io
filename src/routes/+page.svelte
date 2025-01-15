@@ -29,9 +29,9 @@
 		src={base + Photo}
 		class="w-32 h-32 mx-auto mb-4 rounded-full ring ring-4 ring-slate-100"
 	/>
-	<h1 class="text-4xl font-medium tracking-tight text-center">Mitch Kostelecky</h1>
+	<h1 class="text-4xl font-medium tracking-tight text-center">Mitch Kostelecký</h1>
 	<h2 class="pb-8 text-2xl font-medium tracking-tight text-neutral-500 text-center">
-		Design Engineer
+		Frontend Software Engineer
 	</h2>
 
 	<section>
@@ -95,7 +95,7 @@
 		</p>
 
 		<div class="flex gap-4 justify-center transition text-neutral-500 group">
-			<a href="https://www.linkedin.com/in/mitchkostelecky" target="_blank" rel="noopener">
+			<a href="https://linkedin.com/in/mitchkostelecky" target="_blank" rel="noopener">
 				{@html LinkedIn}
 			</a>
 			<a href="https://github.com/mikostel" target="_blank" rel="noopener">
