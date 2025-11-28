@@ -27,7 +27,7 @@
 	<img
 		alt="Photo"
 		src={base + Photo}
-		class="w-32 h-32 mx-auto mb-4 rounded-full ring ring-4 ring-slate-100"
+		class="w-36 h-36 mx-auto mb-4 rounded-full ring ring-4 ring-slate-100"
 	/>
 	<h1 class="text-4xl font-medium tracking-tight text-center">Mitch Kostelecky</h1>
 	<h2 class="pb-8 text-2xl font-medium tracking-tight text-neutral-500 text-center">
@@ -36,14 +36,12 @@
 
 	<section>
 		<h3 class="text-xl font-medium pb-4">About</h3>
+		
 		<p class="text-xl text-neutral-500 pb-4">
-			I'm a design-focused frontend engineering leader with experience building teams and products
-			that scale efficiently.
+			I'm a product-focused engineering leader and founder. I've led engineering teams at healthcare and legal-tech companies, built products that scaled to millions of users, and shipped products from MVP to acquisition.
 		</p>
 		<p class="text-xl text-neutral-500 pb-8">
-			Over the course of my career, I've developed a wide ranging skillset in areas such as system
-			design, software architecture, and web accessibility by building cross-platform, user-centric
-			experiences for education, legal, and healthcare companies.
+			Recently, I founded Charged, a no-code platform for WordPress, Drupal, and Shopify development. I specialize in design systems, frontend architecture, and building products that balance technical excellence with an exceptional user experience.
 		</p>
 	</section>
 
