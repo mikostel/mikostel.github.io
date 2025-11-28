@@ -31,7 +31,7 @@
 	/>
 	<h1 class="text-4xl font-medium tracking-tight text-center">Mitch Kostelecky</h1>
 	<h2 class="pb-8 text-2xl font-medium tracking-tight text-neutral-500 text-center">
-		Frontend Software Engineer
+		Engineering Leader
 	</h2>
 
 	<section>
