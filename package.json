@@ -5,7 +5,7 @@
 	"type": "module",
 	"scripts": {
 		"build": "node build.mjs",
-		"dev": "npx @tailwindcss/cli -i input.css -o styles.css --watch",
+		"dev": "npx @tailwindcss/cli -i input.css -o styles.css --watch=always",
 		"gh-pages": "npm run build && npx gh-pages -d docs"
 	},
 	"devDependencies": {
