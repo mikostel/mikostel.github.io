@@ -1,0 +1,15 @@
+@import "tailwindcss";
+
+@theme {
+	--font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+}
+
+body {
+	font-feature-settings: "cv11", "ss01";
+}
+
+@layer components {
+	.logo {
+		@apply p-8 flex bg-gradient-to-b from-slate-100 to-slate-50 items-center justify-center h-[120px] rounded-lg relative hover:ring hover:ring-2 hover:ring-slate-200 hover:cursor-pointer hover:bg-slate-50;
+	}
+}
