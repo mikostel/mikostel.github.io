@@ -2,14 +2,103 @@
 
 @theme {
 	--font-sans: "Geist", ui-sans-serif, system-ui, sans-serif;
+	--font-mono: "Geist Mono", ui-monospace, SFMono-Regular, monospace;
 }
 
-body {
-	font-feature-settings: "cv11", "ss01";
+@layer base {
+	html {
+		scroll-behavior: smooth;
+	}
+
+	body {
+		font-feature-settings: "cv11", "ss01";
+		@apply bg-white font-sans text-neutral-900 antialiased;
+		@apply dark:bg-neutral-950 dark:text-neutral-100;
+	}
+
+	:focus-visible {
+		@apply outline-2 outline-offset-4 outline-blue-600 dark:outline-blue-400;
+	}
+
+	@media (prefers-reduced-motion: reduce) {
+		html {
+			scroll-behavior: auto;
+		}
+
+		*,
+		*::before,
+		*::after {
+			animation-duration: 0.01ms !important;
+			transition-duration: 0.01ms !important;
+		}
+	}
 }
 
 @layer components {
-	.logo {
-		@apply p-8 flex bg-gradient-to-b from-slate-100 to-slate-50 items-center justify-center h-[120px] rounded-lg relative hover:ring hover:ring-2 hover:ring-slate-200 hover:cursor-pointer hover:bg-slate-50;
+	.page {
+		@apply mx-auto w-full max-w-2xl px-6 py-20 sm:px-8 sm:py-28;
+	}
+
+	/* Small uppercase section label, in the mono face. */
+	.label {
+		@apply mb-5 font-mono text-xs font-medium tracking-[0.12em] text-neutral-500 uppercase;
+		@apply dark:text-neutral-400;
+	}
+
+	.prose-line {
+		@apply text-[1.0625rem] leading-relaxed text-pretty text-neutral-600 dark:text-neutral-300;
+	}
+
+	/* Hairline-divided list. The negative inset lets a row's hover tint
+	   bleed past the text column without moving the text itself. */
+	.list {
+		@apply -mx-3 divide-y divide-neutral-200 dark:divide-neutral-800;
+	}
+
+	.row {
+		@apply flex items-baseline justify-between gap-6 px-3 py-5 transition-colors;
+	}
+
+	a.row {
+		@apply hover:bg-neutral-50 dark:hover:bg-neutral-900;
+	}
+
+	.row-static {
+		@apply cursor-default;
+	}
+
+	.row-main {
+		@apply flex min-w-0 flex-col gap-1.5;
+	}
+
+	.row-title {
+		@apply flex flex-wrap items-baseline gap-x-2.5 text-base font-medium text-neutral-900 dark:text-neutral-50;
+	}
+
+	.row-role {
+		@apply text-sm font-normal text-neutral-500 dark:text-neutral-400;
+	}
+
+	.row-desc {
+		@apply text-[0.9375rem] leading-relaxed text-pretty text-neutral-500 dark:text-neutral-400;
+	}
+
+	.row-meta {
+		@apply shrink-0 font-mono text-xs text-neutral-500 tabular-nums dark:text-neutral-400;
+	}
+
+	/* Hidden until the row is hovered or the link takes focus. */
+	.arrow {
+		@apply size-3.5 self-center text-blue-600 opacity-0 transition-opacity dark:text-blue-400;
+	}
+
+	.row:hover .arrow,
+	a.row:focus-visible .arrow {
+		@apply opacity-100;
+	}
+
+	.social {
+		@apply inline-flex items-center gap-2 text-[0.9375rem] text-neutral-600 transition-colors;
+		@apply hover:text-blue-600 dark:text-neutral-300 dark:hover:text-blue-400;
 	}
 }
