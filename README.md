@@ -1,38 +1,47 @@
-# create-svelte
+# mikostel.github.io
 
-Everything you need to build a Svelte project, powered by [`create-svelte`](https://github.com/sveltejs/kit/tree/main/packages/create-svelte).
+My personal site. One static HTML page, styled with Tailwind CSS v4, deployed to
+GitHub Pages by the workflow in `.github/workflows/deploy.yml` on every push to
+`main`.
 
-## Creating a project
+There is no framework and no client-side JavaScript. The only script on the page
+is the Cloudflare Web Analytics beacon.
 
-If you're seeing this, you've probably already done this step. Congrats!
-
-```bash
-# create a new project in the current directory
-npm create svelte@latest
-
-# create a new project in my-app
-npm create svelte@latest my-app
-```
-
-## Developing
-
-Once you've created a project and installed dependencies with `npm install` (or `pnpm install` or `yarn`), start a development server:
+## Develop
 
 ```bash
-npm run dev
-
-# or start the server and open the app in a new browser tab
-npm run dev -- --open
+npm install
+npm run dev     # rebuilds styles.css on change
 ```
 
-## Building
+Serve the folder with any static server to view it: `npx http-server . -p 5173 -c-1`,
+or the `static` configuration in `.claude/launch.json`.
 
-To create a production version of your app:
+## Build
 
 ```bash
 npm run build
 ```
 
-You can preview the production build with `npm run preview`.
+`build.mjs` compiles and minifies `input.css` into `styles.css`, then copies
+`index.html`, `styles.css` and `assets/` into `docs/`, which is what the deploy
+workflow publishes. `docs/` is generated and ignored by git.
 
-> To deploy your app, you may need to install an [adapter](https://kit.svelte.dev/docs/adapters) for your target environment.
+## Layout
+
+```
+index.html              the page
+input.css               Tailwind source: theme tokens and component classes
+styles.css              compiled output (generated; git-ignored)
+assets/photo.jpg        header portrait
+assets/studies/*.pdf    case studies, linked from the work list
+assets/icons/           arrow and social icons (now inlined in index.html)
+assets/logos/           company logos (unused since the logo grid was removed)
+```
+
+## Editing content
+
+Both lists in `index.html` are plain `<ul>`s of rows: a title, an optional role,
+one line of description, and a right-hand meta column. Add an entry by copying a
+`<li>` and changing the text. Styling comes from the `.row*` classes in
+`input.css`, so markup stays declarative.
